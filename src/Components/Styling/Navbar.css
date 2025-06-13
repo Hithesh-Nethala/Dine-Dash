@@ -1,0 +1,46 @@
+.nav {
+  background-color: #f8f9fa; /* Light background for a clean look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 10px 40px 10px 0px;
+  margin-right: 0rem;
+}
+
+.nav h2 {
+  font-family: 'Poppins', sans-serif; /* Modern font */
+  font-size: 24px;
+  color: #343a40; /* Dark text for contrast */
+  margin: 0;
+  padding-left: 40px;
+}
+
+.nav input[type='text'] {
+  border: 1px solid #ced4da; /* Border for input field */
+  border-radius: 4px; /* Rounded corners */
+  padding: 5px 10px; /* Spacing inside input */
+  width: 250px; /* Fixed width */
+}
+
+.nav input[type='text']::placeholder {
+  color: #6c757d; /* Placeholder text color */
+}
+
+.nav button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  padding: 5px 15px; /* Button padding */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.nav button:hover {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: #fff; /* White text on hover */
+}
+
+.nav .btn-outline-primary {
+  border-color: #007bff; /* Match border color */
+  color: #007bff; /* Match text color */
+}
+
+.nav .btn-outline-primary.ms-2 {
+  margin-left: 10px; /* Space between buttons */
+}

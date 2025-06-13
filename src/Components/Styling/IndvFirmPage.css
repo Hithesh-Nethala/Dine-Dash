@@ -1,0 +1,76 @@
+.indv-cont {
+    border: 1px solid #e0e0e0;
+    border-radius: 0.5rem; 
+    padding: 1.5rem 2.5rem;
+    background-color: #ffffff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin: 1rem auto; 
+    max-width: 800px; 
+}
+
+.restaurant-name {
+    font-size: 1.5rem; 
+    text-align: center;
+    font-weight: 600; 
+    color:darkred; 
+    margin-bottom: 1rem; 
+    font-family: 'Poppins', sans-serif; 
+    background-color: #b5cde6;
+    border-radius: 0.5rem;
+    text-transform: capitalize;
+}
+
+.prod-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    gap: 1rem; 
+    flex-wrap: wrap; 
+    border-top: 1px solid black;
+    padding-top: 0.5rem;
+}
+
+.prod-image {
+    width: 6rem; 
+    height: 5rem;
+    border-radius: 0.5rem; 
+    object-fit: cover; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    position: relative;
+}
+
+.prod-details {
+    flex: 1; 
+    margin-left: 1rem; 
+}
+
+.prod-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #313539; /* Medium gray text */
+    margin: 0;
+}
+
+.prod-desc {
+    font-size: 0.9rem;
+    color: #586066; /* Light gray text */
+    margin: 0.5rem 0 0;
+}
+
+.prod-price {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #28a745; /* Green for price */
+    margin-top: 0.5rem;
+}
+.prod-btn{
+    width:4.3rem;
+    border: 0px;
+    background-color: darkgoldenrod;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.2rem;
+    transform: translateY(-0.8rem);
+    
+}

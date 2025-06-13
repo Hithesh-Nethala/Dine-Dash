@@ -1,0 +1,30 @@
+.itemdisplay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap; /* ⛔ prevents wrapping */
+  gap: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+/* Make images auto-fit based on screen size */
+.image {
+  flex: 1 1 auto;
+  max-width: 100px;
+  height: auto;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .image {
+    max-width: 80px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .image {
+    max-width: 60px;
+  }
+}

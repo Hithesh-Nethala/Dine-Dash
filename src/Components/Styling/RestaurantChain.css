@@ -1,0 +1,28 @@
+.chain-cont{
+    margin-top: 1.5rem;
+}
+.chain-item{
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    margin-top: 1rem;
+}
+.chain-h3{
+    font-size: 1.3rem;
+    font-family:'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.chain-p{
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.chain-images{
+    width:300px;
+    height:200px;
+    margin-right: 1rem;
+    border-radius:1rem;
+}
+.chain-unit:hover{
+    transform: translateY(-2px);
+}
