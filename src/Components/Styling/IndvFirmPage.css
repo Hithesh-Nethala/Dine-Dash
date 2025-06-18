@@ -74,3 +74,21 @@
     transform: translateY(-0.8rem);
     
 }
+.moonloader{
+    top: 3rem;
+    margin: auto;
+}
+@media(max-width:530px){
+    .prod-cont1{
+        order: 2;
+    }
+    .prod-cont2{
+        order:1;
+    }
+    .prod-cont{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap:0rem;
+    }
+}

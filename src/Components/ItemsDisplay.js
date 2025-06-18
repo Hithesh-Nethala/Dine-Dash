@@ -4,11 +4,14 @@ import './Styling/ItemsDisplay.css';
 
 const ItemsDisplay = () => {
   return (
-    <div className="itemdisplay">
+    <div className="items-display content-section">
       {itemData.map((item, index) => (
-        <div key={index} className="item">
-          <img className="image" src={item.item_img} alt={`item-${index}`} />
-        </div>
+        <img
+          key={index}
+          className="item-image"
+          src={item.item_img}
+          alt={`item-${index}`}
+        />
       ))}
     </div>
   );

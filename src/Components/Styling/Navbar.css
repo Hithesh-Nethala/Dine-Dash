@@ -1,46 +1,58 @@
 .nav {
-  background-color: #f8f9fa; /* Light background for a clean look */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  padding: 10px 40px 10px 0px;
-  margin-right: 0rem;
+  width: 100vw;
+  box-sizing: border-box;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 2rem; /* matches content sections */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  /* gap: 1rem; */
 }
 
 .nav h2 {
-  font-family: 'Poppins', sans-serif; /* Modern font */
+  font-family: 'Poppins', sans-serif;
   font-size: 24px;
-  color: #343a40; /* Dark text for contrast */
-  margin: 0;
-  padding-left: 40px;
+  color: #343a40;
+  font-weight: 600;
+  margin: 0rem 0.4rem;
 }
 
 .nav input[type='text'] {
-  border: 1px solid #ced4da; /* Border for input field */
-  border-radius: 4px; /* Rounded corners */
-  padding: 5px 10px; /* Spacing inside input */
-  width: 250px; /* Fixed width */
-}
-
-.nav input[type='text']::placeholder {
-  color: #6c757d; /* Placeholder text color */
-}
-
-.nav button {
-  font-family: 'Poppins', sans-serif;
-  font-size: 14px;
-  padding: 5px 15px; /* Button padding */
-  transition: background-color 0.3s ease; /* Smooth hover effect */
-}
-
-.nav button:hover {
-  background-color: #007bff; /* Bootstrap primary color */
-  color: #fff; /* White text on hover */
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 6px 12px;
+  width: 250px;
+  max-width: 100%;
 }
 
 .nav .btn-outline-primary {
-  border-color: #007bff; /* Match border color */
-  color: #007bff; /* Match text color */
+  border-color: #007bff;
+  color: #007bff;
+  transition: all 0.3s ease;
 }
 
-.nav .btn-outline-primary.ms-2 {
-  margin-left: 10px; /* Space between buttons */
+.nav .btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items:center;
+    padding: 10px 1.2rem;
+    
+  }
+
+  .nav input[type='text'] {
+    width: 15rem;
+    margin-top: 0.5rem;
+  }
+
+  .nav button {
+    margin-top: 0.5rem;
+  }
 }

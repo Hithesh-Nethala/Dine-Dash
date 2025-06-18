@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect ,useState} from 'react'
 import axios from 'axios'
 import { API_URL } from './Api_Path'
+import { MoonLoader } from "react-spinners";
 import './Styling/RestaurantChain.css'
 const RestaurantChain = () => {
     const [data,setData]=useState(null);
@@ -34,6 +35,8 @@ const RestaurantChain = () => {
         <div><i className="fa-solid fa-arrow-left me-3" onClick={()=>clickHandle('left')}></i>
         <i className="fa-solid fa-arrow-right me-1" onClick={()=>clickHandle('right')}></i></div>
         </div>
+        {data===null?<MoonLoader color="#005cc2" className='loader' size={30}/>
+        :
         <div className='chain-item' id='chainGallery' >
         {data && data.map((item_firm,index)=>{
             return(
@@ -50,6 +53,7 @@ const RestaurantChain = () => {
             )
         })}
         </div>
+        }
     </div>
   )
 }

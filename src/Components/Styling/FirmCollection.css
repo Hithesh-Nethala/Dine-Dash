@@ -1,59 +1,82 @@
-.firm-collection{
-    padding: 0rem;
-    margin-left: 0rem;
-    margin-right: 0rem;
+.content-section {
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
 }
-.section-title{
-    font-size: 1.3rem;
-    font-family:'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
+
+.section-title {
+  font-size: 1.3rem;
+  font-family:'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #343a40;
 }
-.firm-image{
-    width:100%;
-    object-fit: cover;
-    height:9.4rem;
-    border-radius: 0.5rem;
+
+.firm-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content:flex-start;
 }
-.firm-card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 15rem;
-    height: max-content;
-    position: relative;
-    border-radius: 0.3;
-    padding-bottom: 1rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+.firm-card {
+  width: calc(25% - 1rem);
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  position: relative;
+  transition: transform 0.2s ease;
 }
+
 .firm-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
+  transform: translateY(-5px);
 }
-.firm-name{
-    text-transform: capitalize;
-    font-size: 0.9rem;
-    font-weight: bold;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.firm-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  position: relative;
 }
-.firm-address{
-    font-size: 0.87rem;
+
+.firm-offer {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #f12711;
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
-.firm-region{
-    text-align: center;
+
+.firm-name {
+  font-size: 1rem;
+  margin: 0.5rem 0 0.25rem;
+  font-weight: 600;
 }
-.firm-offer{
-    width: 100%;
-    max-width: 85%;
-    position: absolute;
-    margin-top: 7.5rem;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    background: transparent;
-    border-radius: 0.2rem;
-    background: linear-gradient(to right, #ff512f, #dd2476);
+
+.firm-address {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.firm-region {
+  margin-top: 0.5rem;
+}
+
+.firm-region .badge {
+  background-color: #e0e0e0;
+  color: #333;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  margin-right: 0.4rem;
 }
 .filter-btn{
     display: flex;
@@ -73,10 +96,48 @@
     padding: 0.2rem;
 }
 .button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-  transform: translateY(-2px); /* Slight lift effect */
+  background-color: #0056b3; 
+  transform: translateY(-2px); 
 }
 .button:focus {
-  outline: none; /* Remove focus outline */
-  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Add focus shadow */
+  outline: none; 
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+/* Responsive behavior */
+@media (max-width: 992px) {
+  .firm-card {
+    width: calc(33.333% - 1rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .firm-card {
+    width: calc(50% - 1rem);
+  }
+  .button{
+    width: 5rem;
+    border: 0px;
+    background-color:cornflowerblue;
+    color: white;
+    font-size: small;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    padding: 0.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .firm-card {
+    width: 100%;
+  }
+   .button{
+    width: 3.5rem;
+    border: 0px;
+    background-color:cornflowerblue;
+    color: white;
+    font-size: small;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    padding: 0.2rem;
+  }
 }
